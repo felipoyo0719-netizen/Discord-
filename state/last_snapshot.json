@@ -1,0 +1,28 @@
+{
+  "day": "2026-10-06",
+  "week": "2026-10-06",
+  "missions": [
+    [
+      "The Art Museum",
+      "Hana-U Corporation"
+    ],
+    [
+      "Capitol Building",
+      "Future Initiative"
+    ],
+    [
+      "Jefferson Plaza",
+      "Core Strength"
+    ],
+    [
+      "Lincoln Memorial",
+      "Brazos de Arcabuz"
+    ],
+    [
+      "Federal Emergency Bunker",
+      "pistol"
+    ]
+  ],
+  "prototype_gear_cache": "mask",
+  "prototype_weapon_cache": "lmg"
+}
