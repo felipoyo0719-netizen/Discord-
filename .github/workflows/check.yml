@@ -20,14 +20,17 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: true
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - name: Compare data and post if changed
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python notify.py
+        run: python division2-discord-notifier/division2-discord-notifier/notify.py
+
       - name: Save last notified data
         run: |
           if [[ -f state/last_snapshot.json ]]; then
