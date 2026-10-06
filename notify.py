@@ -60,7 +60,7 @@ def latest_snapshot(data: dict, today: str) -> dict:
 
     if not options:
         raise ValueError("No valid Escalation target loot up to today's JST date")
-    return max(options, key=lambda item: item["day"])
+    return max(options, key=lambda item: (item["week"], item["day"]))
 
 
 def embed_for(snapshot: dict) -> dict:
